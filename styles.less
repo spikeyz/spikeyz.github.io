@@ -1,40 +1,57 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
+
 body {
-  -webkit-font-smoothing: antialiased;
-  font-family: 'Roboto', sans-serif;
-  background-image: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/asanoha-400px.png);
-}
-p {text-align: center;}
-.Grid {
-  display: flex;
-  flex-wrap: wrap;
-  
-  &-item {
-    width: 100%;
-    margin-top: 2%;
-    
-    @media (min-width: 48rem) {
-      width: 49%;
-      &:nth-child(odd) {
-        margin-right: 2%;
-      }
-    }
-    
-    @media (min-width: 62rem) {
-      width: 23.5%;
-      &:not(:nth-child(4n)) {
-        margin-right: 2%;
-      }
-    }
-    
-    &:before {
-      content: "";
-      float: left;
-      padding-top: 100%;
-    }
-  }
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Roboto', sans-serif;
+    background-image: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/asanoha-400px.png);
 }
 
-.linkedIn{
+p {
+    text-align: center;
+}
+
+.Grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    &-item {
+        width: 50%;
+        margin-top: 2%;
+
+        @media (min-width: 23rem) {
+            width: 49%;
+
+            &:nth-child(odd) {
+                margin-right: 2%;
+            }
+        }
+
+        &:before {
+            content: "";
+            float: left;
+            padding-top: 100%;
+        }
+
+        &-image{
+            height: 50%;
+            width:50%;
+            margin-top:25%;
+            margin-left:25%;
+        }
+    }
+
+}
+
+.linkedIn {
     background-color: #0077B5 !important;
+}
+
+.mail {
+    background-color: #0088B5 !important;
+}
+
+.twitter {
+    background-color: #00ACEE !important;
 }
