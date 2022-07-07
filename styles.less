@@ -5,7 +5,7 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: #FFF;
     margin:0;
-    font-size: 0.8em;
+    font-size: 2em;
 }
 
 p {
@@ -17,6 +17,7 @@ p {
     flex-wrap: wrap;
     margin-left: 10%;
     margin-right: 10%;
+    margin-top: 30px;
 
     &-item {
         width: 50%;
@@ -55,30 +56,30 @@ p {
 }
 
 .banner {
-    min-height: 80px;
+    min-height: 200px;
     background-image:url('images/banner.png');
 }
 
 .profile {
     display:flex;
     flex-direction:column;
-    height:150px;
     justify-content: center;
     align-items: center;
-    margin-top: -30px;
+    margin-top: -100px;
+    margin-bottom: 30px;
 
     &-picture {
-        height:100px;
-        width: 100px;
-        background-size: 100px;
+        height: 300px;
+        width: 300px;
+        background-size: 300px;
         background-image:url('images/profile.png');
         border-radius: 50%;
         border: solid 3px #FFF;
-        margin-top: -45px;
+        margin-top: -60px;
     }
 
     &-name {
-        margin-top: 10px;
+        margin-top: 30px;
         font-weight: bold;
     }
 
@@ -89,12 +90,13 @@ p {
 }
 
 .address {
-    margin-top: 25px;
+    margin-top: 30px;
     display:flex;
     justify-content: center;
-
+    margin-bottom: 30px;
+    
     &-map{
-        height:150px;
+        //height:150px;
     }
 }
 
