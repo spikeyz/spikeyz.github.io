@@ -3,10 +3,39 @@
 <head>
     <link rel="stylesheet/less" type="text/css" href="styles.less" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/4.1.3/less.min.js" integrity="sha512-6gUGqd/zBCrEKbJqPI7iINc61jlOfH5A+SluY15IkNO1o4qP1DEYjQBewTB4l0U4ihXZdupg8Mb77VxqE+37dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script>
+        let map;
+
+        function initMap() {
+        map = new google.maps.Map(document.getElementById("map"), {
+            center: { lat: -34.397, lng: 150.644 },
+            zoom: 8,
+        });
+        }
+
+        window.initMap = initMap;
+    </script>
 </head>
 
 <body>
-    <p>&larr; Resize window to see it in action &rarr;</p>
+    <div class="banner"></div>
+    <div class="profile">
+        <div class="profile-picture"></div>
+        <div class="profile-name">Cédric LACHAISE</div>
+        <div class="profile-title">Director, Product & Innovation</div>
+    </div>
+    <hr class="solid">
+    <div class="address">
+        <div>
+            137 rue d'Aguesseau, 92100 BOULOGNE-BILLANCOURT
+        </div>
+        <div id="map" class="address-map"></div>
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+            defer
+            ></script>
+    </div>
     <div class="Grid">
         <div class="Grid-item linkedIn">
             <img class="Grid-item-image" src="images/linkedin.png" alt="LinkedIn" />
@@ -14,9 +43,8 @@
         <div class="Grid-item mail">
             <img class="Grid-item-image" src="images/email.png" alt="Email" />
         </div>
-        <div class="Grid-item twitter"></div>
-        <div class="Grid-item"></div>
     </div>
+    <hr class="solid">
 </body>
 
 </html>

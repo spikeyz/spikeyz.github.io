@@ -3,7 +3,9 @@
 body {
     -webkit-font-smoothing: antialiased;
     font-family: 'Roboto', sans-serif;
-    background-image: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/asanoha-400px.png);
+    background-color: #FFF;
+    margin:0;
+    font-size: 0.8em;
 }
 
 p {
@@ -52,6 +54,53 @@ p {
     background-color: #0088B5 !important;
 }
 
-.twitter {
-    background-color: #00ACEE !important;
+.banner {
+    min-height: 80px;
+    background-image:url('images/banner.png');
 }
+
+.profile {
+    display:flex;
+    flex-direction:column;
+    height:150px;
+    justify-content: center;
+    align-items: center;
+    margin-top: -30px;
+
+    &-picture {
+        height:100px;
+        width: 100px;
+        background-size: 100px;
+        background-image:url('images/profile.png');
+        border-radius: 50%;
+        border: solid 3px #FFF;
+        margin-top: -45px;
+    }
+
+    &-name {
+        margin-top: 10px;
+        font-weight: bold;
+    }
+
+    &-title {
+        margin-top: 5px;
+    }
+    
+}
+
+.address {
+    margin-top: 25px;
+    display:flex;
+    justify-content: center;
+
+    &-map{
+        height:150px;
+    }
+}
+
+/* Solid border */
+hr.solid {
+    border-top: 1px solid #bbb;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
